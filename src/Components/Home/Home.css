@@ -1,0 +1,15 @@
+.home-div{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    /* height: 50vh; */
+    border-radius: 10px;
+    background: hsla(0,0%,100%,.7);
+}
+#tabs{
+    font-size: 20px;
+}
+.ant-tabs-tab{
+    font-size: 25px !important;
+}

@@ -1,0 +1,18 @@
+#icon{
+    transform: rotate(90);
+}
+.btn-div{
+    text-align: right;
+}
+.btn-div button{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.ant-table-row {
+    background-color: green;
+    cursor: pointer;
+}
