@@ -8,7 +8,7 @@ const EnterRace = () => {
           title: 'Event',
           dataIndex: 'event',
           key: 'event',
-        },
+         },
         {
           title: 'Location',
           dataIndex: 'location',
@@ -80,10 +80,21 @@ const EnterRace = () => {
     <div>
         <div className='btn-div'>
             <Button type='primary' >Refresh</Button>
-            <Button type='primary' danger><GoSettings style={{marginRight:"5px"}}/>Filter</Button>
+            {/* <Button type='primary' danger><GoSettings style={{marginRight:"5px"}}/>Filter</Button> */}
         </div>
         <div className='table-div'>
-        <Table columns={columns} dataSource={data} />
+        <Table columns={columns}
+        pagination= {false}
+         dataSource={data} 
+          onRow={(record, rowIndex) => {
+            console.log("record",record)
+            console.log("rowindex",rowIndex)
+            return{
+              onClick:()=>{console.log("clicked row",rowIndex)}
+            }
+          }}
+          scroll={{ x: 1004 ,y:500 }}
+        />
         </div>
     </div>
   )

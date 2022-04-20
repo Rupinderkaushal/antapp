@@ -1,7 +1,9 @@
 import React from 'react';
 import "./Home.css";
-import { Tabs } from 'antd';
+import {  Tabs } from 'antd';
 import EnterRace from '../enterRace/EnterRace';
+import Scheduled from '../scheduled race/Scheduled';
+import Result from '../Results/Results'
 const { TabPane } = Tabs;
 const Home = () => {
     function callback(key) {
@@ -15,10 +17,10 @@ const Home = () => {
       <EnterRace/>
     </TabPane>
     <TabPane tab="Scheduled Races" key="2">
-      Content of Tab Pane 2
+      <Scheduled/>
     </TabPane>
     <TabPane tab="Results" key="3">
-      Content of Tab Pane 3
+      <Result/>
     </TabPane>
   </Tabs>
    </div>

@@ -9,17 +9,16 @@
     font-weight: 500;
     margin: 10px;
     border-radius: 5px;
-    width: 100px;
+    width: fit-content;
     height: 40px;
+    padding-top: 5px;
 }
-
-.ant-table-tbody > tr > td {
-    background-color: white;
+.ant-table-row {
+    background-color: grey;
     cursor: pointer;
-    text-align: center;
 }
-
 .ant-table-thead > tr > th {
-    text-align: center !important;
+    text-align: center !important ;
     font-weight: bolder !important;
 }
+/* 1276px ok */
