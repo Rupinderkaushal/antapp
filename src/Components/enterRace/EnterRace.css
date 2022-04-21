@@ -23,3 +23,11 @@
     text-align: center !important;
     font-weight: bolder !important;
 }
+.ant-table{
+}
+.main-wrapper{
+    margin-bottom: 10px;
+}
+.ant-table-row-expand-icon{
+    display: none !important;
+}

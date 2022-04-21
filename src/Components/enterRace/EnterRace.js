@@ -54,7 +54,8 @@ const EnterRace = () => {
           location: 'New York No. 1 Lake Park',
           distance:"100m",
           terrain:"Terr",
-          entryfee:"$52"
+          entryfee:"$52",
+          description: 'My name is Rupinder Brown, I am 32 years old, living in New York No. 1 Lake Park.',
         },
         {
           key: '2',
@@ -63,7 +64,8 @@ const EnterRace = () => {
           location: 'London No. 1 Lake Park',
           distance:"200m",
           terrain:"Terr",
-          entryfee:"$2"
+          entryfee:"$2",
+          description: 'My name is Gurpreet Brown, I am 32 years old, living in New York No. 1 Lake Park.',
             
         },
         {
@@ -73,11 +75,12 @@ const EnterRace = () => {
           location: 'Sidney No. 1 Lake Park',
           distance:"100m",
           terrain:"Terr",
-          entryfee:"$25"
+          entryfee:"$25",
+          description: 'My name is vinay Brown, I am 32 years old, living in New York No. 1 Lake Park.',
         },
       ];
   return (
-    <div>
+    <div className='main-wrapper'>
         <div className='btn-div'>
             <Button type='primary' >Refresh</Button>
             {/* <Button type='primary' danger><GoSettings style={{marginRight:"5px"}}/>Filter</Button> */}
@@ -86,13 +89,10 @@ const EnterRace = () => {
         <Table columns={columns}
         pagination= {false}
          dataSource={data} 
-          onRow={(record, rowIndex) => {
-            console.log("record",record)
-            console.log("rowindex",rowIndex)
-            return{
-              onClick:()=>{console.log("clicked row",rowIndex)}
-            }
-          }}
+         expandRowByClick={true}
+          expandedRowRender={(record) => (
+            <p style={{ margin: 0 }}>{record.description}</p>
+          )}
           scroll={{ x: 1004 ,y:500 }}
         />
         </div>
