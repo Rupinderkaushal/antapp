@@ -38,9 +38,10 @@ const Navbar = () => {
       Ants <DownOutlined />
     </a>
   </Dropdown>
-  <Link to="/">Tutorial</Link>
+  <Link to="/spinner">Tutorial</Link>
  
   <Button type='primary'>Login</Button>
+  <Link to="/spin" >Game</Link>
       </div>
       
       </div>
