@@ -41,7 +41,7 @@ const Navbar = () => {
   <Link to="/spinner">Tutorial</Link>
  
   <Button type='primary'>Login</Button>
-  <Link to="/spin" >Game</Link>
+  {/* <Link to="/spin" >Game</Link> */}
       </div>
       
       </div>
